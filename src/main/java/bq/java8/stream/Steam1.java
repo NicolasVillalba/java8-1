@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 import org.junit.Before;
 import org.junit.Test;
 
-public class Steam {
+public class Steam1 {
 
 	private List<Integer> values = new ArrayList<Integer>();
 	
