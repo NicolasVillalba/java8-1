@@ -2,3 +2,7 @@ final Path path = new File( filename ).toPath();
 try( Stream< String > lines = Files.lines( path, StandardCharsets.UTF_8 ) ) {
     lines.onClose( () -> System.out.println("Done!") ).forEach( System.out::println );
 }
+final Path path = new File( filename ).toPath();
+try( Stream< String > lines = Files.lines( path, StandardCharsets.UTF_8 ) ) {
+    lines.onClose( () -> System.out.println("Done!") ).forEach( System.out::println );
+}
