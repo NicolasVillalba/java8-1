@@ -1,4 +1,4 @@
-package bq.java8.stream;
+package bq.java8.stream.file;
 
 import java.io.File;
 import java.io.IOException;
