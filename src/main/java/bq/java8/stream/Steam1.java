@@ -93,7 +93,7 @@ public class Steam1 {
 		assertEquals(sum, sum2);
 		
 		// 1x2x3x4x5x6x.....x20
-		Integer factorial = values.stream().skip(1).reduce((a,b)->a*b).get();
+		Integer factorial = values.parallelStream().skip(1).reduce((a,b)->a*b).get();
 		System.out.println("reduced factorial:" + factorial);
 	}
 	
