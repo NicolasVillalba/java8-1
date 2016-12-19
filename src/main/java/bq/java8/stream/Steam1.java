@@ -28,6 +28,16 @@ public class Steam1 {
 	}
 	
 	@Test
+	public void stream2List() {
+		// Steam ==> List
+		List<Integer> list = values.stream().collect(Collectors.toList());
+		
+		for ( int i = 0; i < list.size(); i++ ) {
+			assertEquals(list.get(i), values.get(i));
+		}
+	}
+	
+	@Test
 	public void testFilter(){
 		System.out.println("before:");
 		values.forEach(value -> System.out.print(value + ","));
